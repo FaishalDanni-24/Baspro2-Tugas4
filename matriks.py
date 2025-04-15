@@ -1,4 +1,3 @@
-# Tinggal Menambahkan .append ke list matriksC
 # Deklarasi Matriks
 matriksA = [
     [1,2,3,4,5],
@@ -17,14 +16,13 @@ matriksB = [
 matriksC = []
 
 # Perkalian matriks
-temp_res = 0
 for i in range(0, len(matriksA), 1):
     matriksC.append([])
     for j in range(0, len(matriksB[0]), 1):
+        temp_res = 0
         for k in range(0, len(matriksB), 1):
             temp_res += matriksA[i][k]*matriksB[k][j]
         matriksC[i].append(temp_res)
-        temp_res = 0
 
 # Tampilkan hasil matriks
 for row in matriksC:
